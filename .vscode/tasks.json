@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "command": "nuget",
+            "label": "NuGet pack",
+            "isBackground": false,
+            "type": "shell",
+            "args": [
+                "pack",
+                "Songhay.Mvvm.nuspec",
+                "-Verbosity",
+                "detailed"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
